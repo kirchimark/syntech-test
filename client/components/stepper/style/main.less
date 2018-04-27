@@ -1,0 +1,28 @@
+.stepper-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.stepwrapper-enter {
+  opacity: 0.01;
+}
+
+.stepwrapper-enter.stepwrapper-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.stepwrapper-leave {
+  opacity: 1;
+}
+
+.stepwrapper-leave.stepwrapper-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+
+

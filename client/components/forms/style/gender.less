@@ -1,0 +1,38 @@
+.gender {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .gender-inputs {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .active {
+      color: #f7626a;
+    }
+
+    .radio {
+      display: none;
+
+      &:checked + label {
+        background: #348be8;
+        color: white;
+        border: 1px solid #348be8;
+      }
+    }
+
+    label {
+      display: flex;
+      width: 79px;
+      height: 36px;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ccc;
+      font-size: 0.8em;
+      color: #ccc;
+    }
+}
